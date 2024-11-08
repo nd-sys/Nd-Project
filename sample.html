@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+.laptop-frame {
+  background-color: #ffffff;
+  border: 20px solid #333;
+  width: 90%;
+  /* max-width: 1200px; */
+  height: 90vh;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 30px;
+}
+
+.laptop-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 15px;
+  background-color: #333;
+  border-radius: 10px 10px 0 0;
+}
+
+    .device-frame {
+  border-radius: 30px;
+  width: 800px;
+  height: 600px;
+  background-color: #004d40;
+  padding: 30px;
+  align-content: center;
+  /* z-index: 1; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  /* margin: 10px 50px; */
+  background-color: #004d40;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a5d6a7;
+  margin-left: 50px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 15px;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fcfafa;
+  text-decoration: none;
+}
+
+/* Authentication Buttons */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-right: 50px;
+}
+
+.auth-buttons .login,
+.auth-buttons .signup {
+  background-color: #a5d6a7;
+  border: none;
+  padding: 8px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #004d40;
+}
+.holdmoney {
+  display: flex;
+  justify-content: space-between;
+}
+.holdmoney1 {
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.holdmoney12 {
+  background-color: gray;
+  padding: 5px;
+  border-radius: 5px;
+}
+.section20 {
+  /* margin: 10px 50px; */
+  background-color: #004d40;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: left;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.cta-buttons .get-started,
+.cta-buttons .watch-features {
+  background-color: #a5d6a7;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #004d40;
+}
+.background10 {
+  background-color: #0c4f4f;
+  /* position: relative; */
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+/* Text Overlay */
+.text-overlay {
+  position: absolute;
+  font-size: 15rem;
+  color: rgba(255, 255, 255, 0.05);
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+    </style>
+</head>
+<body>
+  <div class="background10">
+    <div class="text-overlay">FINFUSE</div>
+    <div class="laptop-frame">
+        <header>
+            <div class="logo">FinFuse</div>
+            <nav>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Cards</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Features</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="login">Log In</button>
+                <button class="signup">Sign Up</button>
+            </div>
+        </header>
+        <section class="section20">
+            <div class="holdmoney">
+                <div class="holdmoney1">
+                    <span class="holdmoney12">#1 Top FinTech Banking Excellence</span>
+                    <div style="margin-top: 20px; font-size: 4rem; font-weight: bold;">YOUR SECURE AND 
+                      <span style="color: yellowgreen;">TRUSTED</span> FINANCIAL PARTNER.</div>
+                    <div><p style="font-size: 1.2rem;">Explore fintech today. Your finances; Discover 
+                        finfuse fintech revolution. <br>Transforming banking experiences one click at a time</p></div>
+                        <div class="cta-buttons">
+                            <button class="get-started">Get Started</button>
+                            <button class="watch-features">Watch our features</button>
+                        </div>
+                </div>
+                <div class="holdmoney2">
+                    <img src="img/hold_money-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </section>
+        <div style="display: flex; justify-content: space-between; gap: 200px; ">
+            <div style="font-size: 3rem; margin-left: 50px;">
+                <p>Financial Evolution <br>The Finfuse story</p>
+            </div>
+            <div style="text-wrap: wrap; margin-right: 50px;margin-top: 70px;">
+                <p>We Pave the Way for Tomorrow's Financial Frontier
+                by Seamlessly Integrating Innovation, Accessibility, and
+                Trust, Crafting Solutions That Empower Individuals.</p>
+                <p>Discover more</p>
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
